@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{155:function(n,t,e){"use strict";e.r(t);e(69);var o={mounted:function(){window.location.replace("https://wbs.zyebank.net:8820")}},c=e(22),component=Object(c.a)(o,(function(){var n=this.$createElement;return(this._self._c||n)("div")}),[],!1,null,null,null);t.default=component.exports}}]);
