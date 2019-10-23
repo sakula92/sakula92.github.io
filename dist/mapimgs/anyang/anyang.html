@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>�ޱ����ĵ�</title>
+</head>
+
+<body>
+	<img src="anyang-main.png" width="375" border="0" usemap="#anyang" id="anyang-imgId" />
+<map name="anyang" id="anyang">
+<area @click="selectItem('zhuzhoushi')" shape="poly" coords="37,2,17,128,59,158,54,174,100,170,126,152,109,131,126,120,106,97,101,79,108,63,98,52,106,40,96,12,74,6" />
+<area @click="selectItem('anyangxian')" shape="poly" coords="109,6,104,21,109,44,115,67,107,84,115,103,142,85,134,67,161,72,170,46,211,48,242,96,286,91,301,57" />
+<area @click="selectItem('anyang')" shape="poly" coords="142,72,161,77,174,50,208,52,235,92,205,99,154,94,155,80,144,81"  />
+<area @click="selectItem('tangyinxian')" shape="poly" coords="179,100,180,114"  />
+<area @click="selectItem('neihuangxian')" shape="poly" coords="311,58,259,136,280,146,296,150,301,161,295,170,336,181,342,172,334,157,349,139,353,126,358,99,352,84,342,81,339,58"  />
+<area @click="selectItem('huaxian')" shape="poly" coords="291,172,211,212,208,283,222,293,254,279,361,242,352,201,332,193,334,185" />
+</map>
+</body>
+<script type="text/javascript">
+	function selectItem (data) {
+		console.log('===HYZ=' + data)
+		document.getElementById('anyang-imgId').src = 'anyang-' + data + '.png'
+	}
+</script>
+</html>

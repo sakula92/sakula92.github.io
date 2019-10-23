@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>�ޱ����ĵ�</title>
+</head>
+
+<body>
+<img id="anyang-imgId" src="xinxiang-main.png" width="375"  border="0" usemap="#anyang" />
+<map name="anyang" id="anyang">
+  <area  @click="selectItem('huixian')"  shape="poly" coords="48,2,49,3,50,25,58,52,44,50,11,87,8,102,27,125,30,146,53,147,64,134,78,132,84,129,84,120,93,111,110,118,113,107,127,102,129,83,120,64,114,51,112,40,98,40,102,27,85,0" />
+  <area @click="selectItem('huijia')"  shape="poly" coords="41,149,40,159,39,183,54,195,61,212,76,204,90,200,83,188,86,165,78,156,84,149,79,142,71,136,52,150" />
+  <area @click="selectItem('xinxiangxian')"  shape="poly" coords="88,130,82,136,83,143,89,152,85,156,90,165,87,184,89,192,103,201,110,192,117,185,127,174,145,176,144,166,156,164,155,155,144,153,139,163,133,163,127,162,121,167,103,152,100,137" />
+  <area @click="selectItem('xinxiang')"  shape="poly" coords="95,117,87,124,92,130,103,134,106,149,121,160,137,159,141,151,130,147,136,138,133,133,135,123,132,119,134,111,128,105,115,110,112,122" />
+  <area  @click="selectItem('weihui')" shape="poly" coords="119,36,117,49,132,85,133,103,138,119,140,133,154,129,176,124,183,128,207,119,214,104,205,90,200,88,177,76,156,61,162,42,145,36" />
+  <area @click="selectItem('yanjing')"  shape="poly" coords="175,128,141,137,139,144,158,153,162,161,157,170,146,168,148,175,167,179,187,191,201,190,207,177,217,173,225,174,228,164,241,86,218,104,208,121,182,132" />
+  <area @click="selectItem('yuanyang')"  shape="poly" coords="66,214,56,232,66,245,132,249,148,234,173,230,178,238,200,246,196,235,200,216,197,212,204,202,198,198,166,184,148,180,131,178,104,203,90,202" />
+  <area @click="selectItem('fenqiu')" shape="poly" coords="236,161,227,180,213,178,206,194,207,206,200,235,204,250,304,246,312,232,290,204,280,189,250,177,248,168" />
+<area @click="selectItem('chengheng')"  shape="poly" coords="250,166,256,176,282,188,292,203,314,229,332,195,336,177,372,135,339,112,302,130,270,150" />
+</map>
+</body>
+<script type="text/javascript">
+	function clickItem (data) {
+		console.log('===HYZ=' + data)
+		document.getElementById('anyang-imgId').src = 'anyang-' + data + '.png'
+	}
+</script>
+</html>

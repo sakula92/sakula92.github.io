@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>�ޱ����ĵ�</title>
+</head>
+
+<body>
+	<img id="anyang-imgId" src="xinyang-main.png" width="375"  border="0" usemap="#anyang" />
+<map name="anyang" id="anyang">
+<area @click="selectItem('xinyang')" shape="poly" coords="9,7,5,138,46,179,81,159,82,123,98,102,93,95,113,73,67,29" />
+<area @click="selectItem('luoshan')" shape="poly" coords="114,77,97,95,102,106,85,127,86,168,107,183,142,178,149,156,135,136,162,99,163,81,147,73" />
+<area @click="selectItem('xixian')" shape="poly" coords="145,32,157,57,146,68,166,82,167,97,181,98,185,105,202,90,232,64,235,36,224,31,215,16,220,10,212,2" />
+<area @click="selectItem('huaibin')" shape="poly" coords="227,8,289,22,315,54,306,61,280,78,272,74,267,56,257,62,239,54" />
+<area @click="selectItem('gushi')" shape="poly" coords="283,82,319,55,365,18,371,114,370,171,323,177,319,169,315,127,300,110,286,124,278,102" />
+<area @click="selectItem('huangshan')" shape="poly" coords="203,96,237,57,261,63,278,85,272,122,261,147,240,153,220,141,218,115,208,111" />
+<area @click="selectItem('guangshan')" shape="poly" coords="166,102,143,135,150,156,151,168,240,185,237,175,234,154,214,144,203,105" />
+<area @click="selectItem('shangcheng')" shape="poly" coords="275,126,265,150,239,157,245,184,254,197,250,206,260,249,283,248,318,179,313,129,300,115" />
+<area @click="selectItem('xixian')" shape="poly" coords="148,171,241,189,251,199,217,242,147,215" />
+</map>
+</body>
+<script type="text/javascript">
+	function clickItem (data) {
+		console.log('===HYZ=' + data)
+		document.getElementById('anyang-imgId').src = 'anyang-' + data + '.png'
+	}
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>�ޱ����ĵ�</title>
+</head>
+
+<body>
+	<img id="anyang-imgId" src="luoyang-main.png" width="375"  border="0" usemap="#anyang" />
+<map name="anyang" id="anyang">
+<area @click="selectItem('luoning')" shape="poly" coords="82,165,56,184,20,216,2,251,41,294,126,287,136,251" />
+<area @click="selectItem('yiyang')" shape="poly" coords="144,115,83,165,134,239,140,221,155,222,179,186,155,167,150,151"/>
+<area @click="selectItem('luoyang')" shape="poly" coords="177,76,145,111,154,135,154,153,168,173,179,188,164,215,200,208,233,211,257,214,272,232,277,224,294,207,282,189,266,177,265,165,275,167,237,107,220,117,214,100,204,85,202,76" />
+<area @click="selectItem('xinan')" shape="poly" coords="155,10,165,55,158,60,179,74,205,71,208,73,212,69,204,49,200,28,165,1" />
+<area @click="selectItem('mengjin')" shape="poly" coords="205,34,217,70,208,85,225,111,236,102,262,117,264,99,296,89,308,95,304,66,277,50,279,24,262,12" />
+<area @click="selectItem('yanshi')" shape="poly" coords="312,97,296,91,268,106,264,121,244,111,269,151,293,153,308,178,339,161"  />
+<area @click="selectItem('yichuan')" shape="poly" coords="275,158,284,169,270,170,276,183,292,191,297,211,322,213,349,243,350,231,361,234,369,219,352,162,316,181" />
+<area @click="selectItem('ruyang')" shape="poly" coords="296,213,321,217,348,246,367,287,348,311,304,274,296,250,287,250,278,230"  />
+<area @click="selectItem('songxian')" shape="poly" coords="160,219,216,214,254,217,273,236,282,247,304,279,332,303,314,329,275,328,246,319,238,280,220,247"  />
+<area @click="selectItem('luanchuan')" shape="poly" coords="143,226,174,228,218,251,239,314,196,335,195,355,160,349,123,305,138,276"  />
+</map>
+</body>
+<script type="text/javascript">
+	function clickItem (data) {
+		console.log('===HYZ=' + data)
+		document.getElementById('anyang-imgId').src = 'anyang-' + data + '.png'
+	}
+</script>
+</html>

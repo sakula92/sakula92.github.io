@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>测试页</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width"/>
+    <script type="text/javascript">
+        let i=0;
+        getLocalStorage=function(){
+            document.getElementById('localdata').innerHTML=localStorage.getItem('my');
+        };
+        setLocalStorage=function(){
+            i++;
+            localStorage.setItem('my',i)
+        }
+    </script>
+</head>
+<body>
+<div id="localdata"></div>
+<button onclick="getLocalStorage()">获取localstorage</button>
+<button onclick="setLocalStorage()">设置localstorage</button>
+<button onclick="window.location.reload()">刷新</button>
+</body>
+</html>
